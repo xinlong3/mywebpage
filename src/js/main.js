@@ -89,7 +89,7 @@ var iter = 1;
 var prevButton = document.getElementById("prev");
 var nextButton = document.getElementById("next");
 var createLabDiv = document.getElementById("CreateLab");
-var forwardLabDiv = document.getElementById("ForwardLab");
+var forwardLabDiv = document.getElementById("ECE391");
 var cs225fpDiv = document.getElementById("CS225FP");
 prevButton.onclick = function() {
   if (iter === 1) {
