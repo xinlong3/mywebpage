@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MP1</title>
+        <script src="https://kit.fontawesome.com/7efc1db908.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header id='header'>
+            <div id='navBar'>
+                <nav>
+                    <a href="#aboutMe" id='aboutMeTag'>About</a>
+                    <a href="#myProjects" id='myProjectsTag'>Projects</a>
+                    <a href="#contactMe" id='contactMeTag'>Contact</a>
+                </nav>
+            </div>
+        </header>
+
+        <main id='cont'>
+            <section id='pageHeader'>
+                <h1 class='toFadeIn'>
+                    Welcome to Xinlong's Page!
+                </h1>
+            </section>
+            <section id='aboutMe'>
+                <div class="col">
+                    <div class='aboutMeIcon' id='compIcon'>
+                        <a><i class="fas fa-laptop-code fa-10x"></i></a>
+                    </div>
+                    <div class='aboutMeTitle' id='compTitle'>
+                        <p>
+                            What do I do?
+                        </p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class='aboutMeIcon' id='personIcon'>
+                        <a><i class="far fa-user fa-10x"></i></a>
+                    </div>
+                    <div class='aboutMeTitle' id='personTitle'>
+                        <p>
+                            Me!
+                        </p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class='aboutMeIcon' id='soccerIcon'>
+                        <a><i class="fas fa-futbol fa-10x"></i></a>
+                    </div>
+                    <div class='aboutMeTitle' id='soccerTitle'>
+                        <p>
+                            My Fav!
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section id='myProjects'>
+                <div><button class='crsArrow' id='prev'>&#60;</button></div>
+                <div id='crs'>
+                    <div class='singleProj' id='CreateLab'>
+                        <div class='projectIcons'>
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <div class='projectTitle'>
+                            <p>CreateLab</p>
+                        </div>
+                        <div class='projectDesc'>
+                            I had a research assistant job in CreateLab. Me and my teammates implemented a cloud-native search engine based on 
+                            a novel statistical index. The result was successful: our search engine has beaten many existing ones in the market.
+                        </div>
+                    </div>
+                    <div class='singleProj' id='ECE391'>
+                        <div class='projectIcons'>
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <div class='projectTitle'>
+                            <p>ECE 391 OS Project: Illinix</p>
+                        </div>
+                        <div class='projectDesc'>
+                            This was an awesome OS kernel project. We wrote an Linux kernel from scratch. Many essential aspects of an operating 
+                            system were covered: virtual memory, file system, interrupt and system call handlers, and scheduling.
+                        </div>
+                    </div>
+                    <div class='singleProj' id='CS225FP'>
+                        <div class='projectIcons'>
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <div class='projectTitle'>
+                            <p>CS225 Final Project: Flights</p>
+                        </div>
+                        <div class='projectDesc'>
+                            This was my favorite course project. We made a program that can efficiently compute the shortest flight path from one airport to 
+                            another in the world based on OpenFlights dataset that contains 60000+ air routes.
+                        </div>
+                    </div>
+                    
+                </div>
+                <div><button class='crsArrow' id='next'>&#62;</button></div>
+            </section>
+            <section id='contactMe'>
+                <div id='contactInfoCard'>
+                    <div id='cicTitle'>
+                        <p>
+                            Contact Me
+                        </p>
+                    </div>
+                    <div id='myEmail'>
+                        <p>
+                            Email: kaisenairence@outlook.com
+                        </p>
+                    </div>
+                    <div id='myPhone'>
+                        <p>
+                            Work Phone: 2179796188
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section id='social'>
+                <div id='socialBox'>
+                    <div>
+                        <a href='https://www.facebook.com/xinlong.dai.90'>
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </div>
+                    <div>
+                        <a href='https://www.instagram.com/kaisenairence/'>
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                    <div>
+                        <a href='https://github.com/xinlong3'>
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <div class='modals' id='compModal'>
+            <div class='modalWindow'>
+                <span class="closeButton" id='compCloseButton'>&times;</span>
+                <p>I am a junior in Computer Engineering. My current research focus is on Natural Language Processing. I am also in an active search of internship in Summer 2022!</p>
+            </div>
+        </div>
+        <div class='modals' id='personModal'>
+            <div class='modalWindow'>
+                <span class="closeButton" id='personCloseButton'>&times;</span>
+                <img src='assets/hs.jpg'>
+            </div>
+        </div>
+        <div class='modals' id='soccerModal'>
+            <div class='modalWindow' id='soccerModalWindow'>
+                <video autoplay muted loop id="soccerVideo">
+                    <source src="assets/goal_h.mp4" type="video/mp4">
+                </video>
+                <span class="closeButton" id='soccerCloseButton'>&times;</span>
+                <p>Soccer is my favorite sport. I am a fan of Chelsea FC. The video shows one of my favorite goal I scored. (Shout out to the playmaker!)</p>
+            </div>
+        </div>
+        <footer id='footer'>
+            <p>Thank you for visiting the site!</p>
+        </footer>
+    </body>
+</html>
